@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Casella Axel | PWA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="icons/fv/favicon-32x32.png">
+  </head>
+  
+  <body class="body">
+    <!--backgroundVideo que cambiará dinamicamente desde el DOM-->
+    <video id="background-video" autoplay loop muted>
+      <source src="" type="video/mp4">
+    </video>
+    <!--div principal de la App-->
+    <div class="wrapper">
+      <!--flecha para regresar-->
+      <header><i class='bx bx-left-arrow-alt'></i>CLIMA</header>
+      <section class="input-part">
+        <p class="info-txt"></p>
+        <div class="content">
+          <input type="text" spellcheck="false" placeholder="Ingrese el nombre de la ciudad" required>
+          <div class="separator"></div>
+          <button>Obtener la ubicación del dispositivo</button>
+        </div>
+      </section>
+      <!--section de detalles del clima-->
+      <section class="weather-part">
+        <img src="" alt="ícono del clima">
+        <div class="temp">
+          <span class="numb">_</span>
+          <span class="deg">°</span>C
+        </div>
+        <div class="weather">_ _</div>
+        <div class="location">
+          <i class='bx bx-map'></i>
+          <span>_, _</span>
+        </div>
+        <div class="bottom-details">
+          <div class="column feels">
+            <i class='bx bxs-thermometer'></i>
+            <div class="details">
+              <div class="temp">
+                <span class="numb-2">_</span>
+                <span class="deg">°</span>C
+              </div>
+              <p>Térmica</p>
+            </div>
+          </div>
+          <div class="column humidity">
+            <i class='bx bxs-droplet-half'></i>
+            <div class="details">
+              <span>_</span>
+              <p>Humedad</p>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-details">
+          <div class="column feels">
+            <i class='bx bxs-thermometer'></i>
+            <div class="details">
+              <div class="temp">
+                <span class="numb-1">_</span>
+                <span class="deg">°</span>C
+              </div>
+              <p>Min.</p>
+            </div>
+          </div>
+            <div class="column humidity">
+              <i class='bx bxs-thermometer'></i>
+              <div class="details">
+                <div class="temp">
+                  <span class="numb-3">_</span>
+                  <span class="deg">°</span>C
+                </div>
+                <p>Máx.</p>
+              </div>
+            </div>
+        </div>
+        <div class="bottom-details">
+          <div class="column humidity">
+            <i class='bx bx-wind'></i>
+            <div class="details">
+              <div class="temp">
+                <span class="numb-4">_</span>
+                <span class="deg">km</span>/h.
+              </div>
+              <p>Viento</p>
+            </div>
+          </div>
+            <div class="column humidity">
+              <i class='bx bxs-down-arrow-alt'></i>
+              <div class="details">
+                <div class="temp">
+                  <span class="numb-5">_</span>
+                  <span class="deg">h</span>Ps.
+                </div>
+                <p>Presión</p>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+    <!--JS-->
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
